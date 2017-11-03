@@ -1,0 +1,35 @@
+{
+    "name": "ching",
+    "version": "0.0.1",
+    "description": "A command set help yto take care of your GitHub/NPM accounts",
+    "main": "index.js",
+    "bin": {
+        "ching": "bin/ching.js"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "create-github-repository",
+        "npm-template"
+    ],
+    "author": {
+        "name": "YounGoat",
+        "email": "youngoat@163.com",
+        "url": "https://youngoat.github.io"
+    },
+    "license": "ISC",
+    "dependencies": {
+        "co": "^4.6.0",
+        "github-rest": "^0.0.0",
+        "if2": "^0.1.2",
+        "noda": "^0.1.0"
+    },
+    "devDependencies": {},
+    "directories": {},
+    "homepage": "https://github.com/YounGoat/ching",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/YounGoat/ching.git"
+    }
+}

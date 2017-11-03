@@ -1,0 +1,3 @@
+{
+    "description": "Initialize current directory to NPM package and git repository which is bound to remote GitHub repository."
+}
