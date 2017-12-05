@@ -23,7 +23,7 @@ const MODULE_REQUIRE = 1
         console.error(`expected home is not a directory: ${home}`);
     }
     else {
-        console.log(`home directory found: ${home}`);
+        // console.log(`home directory found: ${home}`);
     }
 })();
 

@@ -1,6 +1,10 @@
 #	ching
 __A command set help yto take care of your GitHub/NPM accounts__
 
+[![total downloads of ching](https://img.shields.io/npm/dt/ching.svg)](https://www.npmjs.com/package/ching)
+[![ching's License](https://img.shields.io/npm/l/ching.svg)](https://www.npmjs.com/package/ching)
+[![latest version of ching](https://img.shields.io/npm/v/ching.svg)](https://www.npmjs.com/package/ching)
+
 It is really tedious to initialise an NPM package step by step. You have to: 
 1.  Create a repository on GitHub.com;
 2.  Create a local copy by cloning (or `git remote add ...`);
@@ -79,6 +83,10 @@ This command interactively leads you to,
 
 Similiar to __ching init__, this command will help you to create remote repository on GitHub.com and bound it to local Git repository.
 
+### ching github-remove
+
+Remove remote repostiroy on GitHub.com.
+
 ### ching rename
 
 This command interactively leads you to,
@@ -89,6 +97,10 @@ This command interactively leads you to,
 ### ching reset
 
 This command removes all local-saved information about your GitHub/NPM accounts.
+
+### ching whoami
+
+Display owner of NPM / GitHub accounts used by __ching__.
 
 ##  Examples
 

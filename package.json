@@ -1,6 +1,6 @@
 {
     "name": "ching",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "A command set help yto take care of your GitHub/NPM accounts",
     "main": "index.js",
     "bin": {
@@ -21,7 +21,7 @@
     "license": "ISC",
     "dependencies": {
         "co": "^4.6.0",
-        "github-rest": "^0.0.0",
+        "github-rest": "~0.0.0",
         "if2": "^0.1.2",
         "noda": "^0.1.0"
     },

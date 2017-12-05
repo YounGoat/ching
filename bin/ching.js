@@ -17,30 +17,12 @@ let command = null;
 if (argv.length && !argv[0].startsWith('-')) {
     command = argv.shift();
 }
-
-if (command) {
-    noda.inRequire(`command/${command}`)(argv);
+if (!command) {
+    command = 'help';
 }
-else {
-    let names = fs.readdirSync(noda.inResolve('command'));
-    console.log();
-    console.log('NAME');
-    console.log('    ching - Powerful manage tool for NPM package.');
-    console.log();
-    console.log('SYNOPSIS');
-    console.log('    ching <sub-command-name> [argv]');
-    console.log('    Invoke specified sub command which is developed on the Ching platform.');
-    console.log();
-    names.forEach((name) => {
-        name = name.replace(/\.js$/, '');
-        console.log(`    ching ${name}`);
 
-        let commandJson = noda.inRequire(`command/${name}/command.json`, true);
-        if (commandJson) {
-            console.log(`    ${commandJson.description}`);
-        }
-
-        console.log();
-    });
-    console.log();
+if (!noda.inExists(`command/${command}`)) {
+    console.error(`No such sub-command: ${command}`);
+    process.exit(1);
 }
+noda.inRequire(`command/${command}`)(argv);
