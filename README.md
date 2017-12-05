@@ -1,5 +1,5 @@
 #	ching
-__A command set help yto take care of your GitHub/NPM accounts__
+__A command set help you to take care of your GitHub/NPM accounts__
 
 [![total downloads of ching](https://img.shields.io/npm/dt/ching.svg)](https://www.npmjs.com/package/ching)
 [![ching's License](https://img.shields.io/npm/l/ching.svg)](https://www.npmjs.com/package/ching)
@@ -67,9 +67,10 @@ APIs are not available yet.
 
 *   [init](#ching-init)
 *   [github-init](#ching-github-init)
+*   [github-remove](#ching-github-remove)
 *   [rename](#ching-rename)
 *   [reset](#ching-reset)
-
+*   [whoami](#ching-whoami)
 ### ching init
 
 This command interactively leads you to,
